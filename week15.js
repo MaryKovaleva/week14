@@ -20,9 +20,13 @@ if (surname.value == "") {
     document.getElementById('ErrorMessage')
     .innerHTML+= "Ваша фамилия не заполненна<br>";}
 
-if (password.value == "") {
+    if (password.value == "") {
+        document.getElementById('ErrorMessage')
+        .innerHTML+= "Ваш пароль не заполнен<br>";}
+
+if (password.value.length<=10) {
     document.getElementById('ErrorMessage')
-    .innerHTML+= "Ваш пароль не заполнен<br>";}
+    .innerHTML+= "Ваш пароль слишком короткий<br>";}
 
 if (password2.value == ""){
     document.getElementById('ErrorMessage')
