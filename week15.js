@@ -13,24 +13,24 @@ document.getElementById('ErrorMessage')
 .innerHTML+= "Ваше имя не заполненно<br>";}
 
 if (email.value == "") {
-    document.getElementById('ErrorMessage')
-    .innerHTML+= "Ваша почта не заполненна<br>";}
+document.getElementById('ErrorMessage')
+.innerHTML+= "Ваша почта не заполненна<br>";}
 
 if (surname.value == "") {
-    document.getElementById('ErrorMessage')
-    .innerHTML+= "Ваша фамилия не заполненна<br>";}
+document.getElementById('ErrorMessage')
+.innerHTML+= "Ваша фамилия не заполненна<br>";}
 
-    if (password.value == "") {
-        document.getElementById('ErrorMessage')
-        .innerHTML+= "Ваш пароль не заполнен<br>";}
+if (password.value == "") {
+document.getElementById('ErrorMessage')
+.innerHTML+= "Ваш пароль не заполнен<br>";}
 
-if (password.value.length<=10) {
-    document.getElementById('ErrorMessage')
-    .innerHTML+= "Ваш пароль слишком короткий<br>";}
+if (password.value.length<=10 && password.value == "" ) {
+document.getElementById('ErrorMessage')
+.innerHTML+= "Ваш пароль слишком короткий<br>";}
 
 if (password2.value == ""){
-    document.getElementById('ErrorMessage')
-    .innerHTML+= "Допущена ошибка в повторе пароля";
+document.getElementById('ErrorMessage')
+.innerHTML+= "Допущена ошибка в повторе пароля";
 }
 
 }
